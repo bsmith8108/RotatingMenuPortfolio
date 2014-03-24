@@ -1,0 +1,39 @@
+<html>
+<body>
+ <form name="test" onsubmit="move()">
+ a: <input type=text name="a"><br>
+ b: <input type=text name="b"><br>
+ <div onclick="move">Move</div>
+ <script>
+   function move(){
+    var circle = document.getElementsByTagName('path')[0];
+    var a = document.forms["test"]["a"].value;
+    var b = document.forms["test"]["b"].value;
+    var M = "rotate("+a+")";
+    circle.setAttribute("transform", M);
+   }
+   </script>
+ </form>
+ <svg width="600px" height="400px">
+    <circle id="test"  cx="100" cy="100" r="30" />
+  <circle cx="100" cy="100" r="30" onclick="move()" />
+  <path
+    d="M300,250 L100,100"
+    style="fill:none; stroke:grey; stroke-width:2px;"
+    id="PATH_ID" />
+  
+   <!-- DEFINE A TEXT ELEMENT AND SET FONT PROPERTIES. -->
+   <!-- USE DY TO MOVE TEXT ABOVE THE PATH. -->
+   <text
+    style="text-anchor:middle; font: 16px sans-serif;"
+    dy="-12">
+ 
+    <!-- DEFINE A TEXT PATH FOLLOWING THE PATH DEFINED ABOVE. -->
+    <!-- USE STARTOFFSET TO CENTER TEXT. -->
+     <textPath
+      xlink:href="#PATH_ID"
+      startoffset="50%">Centered edge label</textPath>
+   </text>
+ </svg>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+ <head>
+  <title>Graph menu</title>
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+ </head>
+ <body>
+ <h1>Brandon Smith's Portfolio</h1>
+ <a href="purejsGraph.html">Only JS Verion</a>
+
+ <svg height= "500" width="500">
+  <circle cx="250" cy="250" r="30" stroke="black" stroke-width=1 fill="lightgrey" />
+  <circle cx="125" cy="375" r="30" stroke="black" stroke-width=1 fill="red" />
+  <circle cx="375" cy="375" r="30" stroke="black" stroke-width=1 fill="green" />
+  <circle cx="125" cy="125" r="30" stroke="black" stroke-width=1 fill="yellow" />
+  <circle cx="375" cy="125" r="30" stroke="black" stroke-width=1 fill="purple" />
+
+  <path
+   d=" M146.05, 146.374
+       L228.95, 228.63
+      "
+   style="fill:none; stroke:grey; stroke-width:3px;"
+   id="TOP_LEFT" />
+  <path
+   d="  M146.05, 353.63
+        L228.95, 271.05
+      "
+   style="fill:none; stroke:grey; stroke-width:3px;"
+   id="BOTTOM_LEFT" />
+  <path
+   d="  M271.05, 228.63
+        L353.63, 146.05
+       "
+   style="fill:none; stroke:grey; stroke-width:3px;"
+   id="TOP_RIGHT" />
+  <path
+   d=" M271.05, 271.05
+       L353.63, 353.63
+       "
+   style="fill:none; stroke:grey; stroke-width:3px;"
+   id="BOTTOM_RIGHT" />
+
+  <text
+   style="text-anchor:middle; font-size:23px;"
+   dy="-12">
+   <textPath
+    xlink:href="#TOP_LEFT"
+    startoffset="50%">About</textPath>
+  </text>
+  <text
+   style="text-anchor:middle; font-size:23px;"
+   dy="-12">
+   <textPath
+    xlink:href="#TOP_RIGHT"
+    startoffset="50%">Contact</textPath>
+   </text>
+  <text
+   style="text-anchor:middle; font-size:23px;"
+   dy="-12">
+   <textPath
+    xlink:href="#BOTTOM_LEFT"
+    startoffset="50%">Experience</textPath>
+   </text>
+  <text
+   style="text-anchor:middle; font-size:23px"
+   dy="-12">
+   <textPath
+    xlink:href="#BOTTOM_RIGHT"
+    startoffset="50%">Reviews</textPath>
+   </text>
+
+ </svg>
+ </body>
+</html>

@@ -1,0 +1,100 @@
+body {
+background-image:url('tiled4.png');
+background-repeat:repeat;
+font-family:"Comfortaa-Regular";
+}
+
+#node {
+background-color:lightgrey;
+border-radius:200px;
+text-align:center;
+margin-left:5%;
+margin-right:5%;
+padding:5%;
+}
+
+h1 {
+text-align:center;
+}
+
+#title {
+font-size:50px;
+margin-bottom:0px;
+}
+
+@font-face {
+font-family:"Comfortaa-Regular";
+src: url('comfortaa/Comfortaa-Regular.ttf');
+}
+
+#node p {
+text-align:left;
+padding-left:5%;
+padding-right:5%;
+}
+
+#node a {
+text-decoration:none;
+}
+
+#talents {
+text-align:left;
+margin:auto;
+width:70%;
+padding-left:5%;
+padding-right:5%;
+padding-bottom:5%;
+}
+
+#projectsDiv {
+text-align:center;
+margin:auto;
+height:200px;
+padding-left:5%;
+padding-right:5%;
+padding-bottom:5%;
+}
+
+.project {
+text-align:center;
+margin:auto;
+width:110px;
+height:75px;
+border:1px solid black;
+padding:10px;
+float:left;
+margin:5px;
+border-radius:40px;
+-webkit-transition: background-color 1s, width 1s, height 1s, border 1s;
+}
+
+
+.projlink{
+color:black;
+}
+
+.project:hover {
+background-color:#65caca;
+width:120px;
+height:90px;
+border:3px solid grey;
+}
+
+#reviews {
+margin:auto;
+width:70%;
+text-align:left;
+}
+
+.review {
+height:150px;
+padding:20px;
+margin:5px;
+border-radius:20px;
+-webkit-transition: background-color 1s;
+}
+
+.review:hover {
+background-color:#65caca;
+}
+
